@@ -1,4 +1,4 @@
-import type { Route } from "./+types/main-page"; // RR7의 타입 안전성 (선택사항)
+import type { Route } from "./+types/main-page";
 import { MainPageContent } from "~/pages/MainPage";
 
 export function meta({}: Route.MetaArgs) {
