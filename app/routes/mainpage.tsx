@@ -1,4 +1,5 @@
-import type { Route } from "./+types/main-page"; // RR7의 타입 안전성 (선택사항)
+import { Outlet } from "react-router";
+import type { Route } from "./+types/mainpage";
 import { MainPageContent } from "~/pages/MainPage";
 
 export function meta({}: Route.MetaArgs) {
@@ -9,5 +10,10 @@ export function meta({}: Route.MetaArgs) {
 }
 
 export default function MainPage() {
-  return <MainPageContent />;
+  return (
+    <div>
+      <MainPageContent />
+      <Outlet/>
+    </div>
+  );
 }

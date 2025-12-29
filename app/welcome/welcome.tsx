@@ -5,7 +5,7 @@ import { Link } from "react-router";
 export function Welcome() {
   return (
     <div>
-      <Link to="/main-page">
+      <Link to="/mainpage">
       TO MAIN
       </Link>
     </div>
