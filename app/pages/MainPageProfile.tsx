@@ -1,7 +1,13 @@
-export function MainPageProfile(){
+interface UserInfo {
+    user_id: number;
+    username: string;
+    profile_image_url: string | null;
+}
+
+export function MainPageProfile({user}: {user: UserInfo}) {
     return(
         <div>
-            프로필이 올 자리입니다
+            {user.username}님의 프로필 페이지
         </div>
     );
 }
